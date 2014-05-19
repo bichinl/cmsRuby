@@ -1,0 +1,97 @@
+#wrapper
+	%nav{:class=>"navbar navbar-inverse navbar-fixed-top", :role=>"navigation"}
+		.navbar-header
+			%button.navbar-toggle{:type=>"button", :data=>{:toggle=>"collapse",:target=>"navbar-ex1-collapse"}}
+				%span.sr-only Toggle navigation
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			%a.navbar-brand{:href=>"#"}
+				%i.fa.fa-cube
+				SourCode Snippets
+		.collapse.navbar-collapse.navbar-ex1-collapse
+			%ul.nav.navbar-nav.side-nav
+				%li.active
+					%a{:href=>"#"}
+						%i.fa.fa-dashboard
+						Home
+				%li.dropdown
+					%a.dropdown-toggle{:href=>"#", :data=>{:toggle=>"dropdown"}}
+						%i.fa.fa-caret-square-o-down
+							Languages
+							%b.caret
+					%ul.dropdown-menu
+						%li
+							%a{:href=>"#"}Dropdown Item
+						%li
+							%a{:href=>"#"}Another Item
+						%li
+							%a{:href=>"#"}Third Item
+						%li
+							%a{:href=>"#"}Last Item
+			%ul.nav.navbar-nav.navbar-right.navbar-user
+				%li.dropdown.messages-dropdown
+					%a.dropdown-toggle{:href=>"#", :data=>{:toggle=>"dropdown"}}
+						%i.fa.fa-envelope
+						Messages
+						%span.badge 7
+						%b.caret
+					%ul.dropdown-menu
+						%li.dropdown-header 7 New Messages
+						%li.message-preview
+							%a{:href=>"#"}
+								%span.avatar
+									%img{:src=>"http://placehold.it/50x50"}
+								%span.name John Doe
+								%span.message Hey there, wtf!
+								%span.time
+									%i.fa.fa-clock-o
+									4:44 PM
+						%li.divider
+						%li
+							%a{:href=>"#"}
+								View Inbox
+								%span.badge 7
+				%li.dropdown.user-dropdown
+					%a.dropdown-toggle{:href=>"#", :data=>{:toggle=>"dropdown"}}
+						%i.fa.fa-user
+						John Doe
+						%span.badge 7
+						%b.caret
+					%ul.dropdown-menu
+						%li
+							%a{:href=>"#"}
+								%i.fa.fa-user
+								Profile
+						%li
+							%a{:href=>"#"}
+								%i.fa.fa-envelope
+								Inbox
+								%span.badge 7
+						%li
+							%a{:href=>"#"}
+								%i.fa.fa-gear
+								Settings
+						%li.divider
+						%li
+							%a{:href=>"#"}
+								%i.fa.fa-power-off
+								Log Out
+	#page-wrapper
+		%h1
+			SourCode
+			%small Snippets
+
+		%ol.breadcrumb
+			%li.active
+				%i.fa.fa-dashboard
+				Home
+		
+		.alert.alert-success.alert-dismissable
+			%button.close{:type=>"button", :data=>{:dismiss=>"alert"}, :aria=>{:hidden=>"true"}} &times;
+			Welcome to SourCode Snippets Admin by
+			%a.text-success{:href=>"#"}
+				%strong	Start Bootstrap!
+			Feel free to use this template for your admin needs! We are using a few different plugins to handle the dynamic tables and charts, so make sure you check out the necessary documentation links provided.
+			
+		
