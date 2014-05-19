@@ -1,0 +1,12 @@
+#page-wrapper
+	= form_for @usuario do |f|
+		= f.label :nombre
+		= f.text_field :nombre
+		= f.label :email
+		= f.text_field :email
+		= f.label :username
+		= f.text_field :username
+		= f.label :password
+		= f.password_field :password, class: "as", id:"as", size:20
+		= f.submit "Create"
+	

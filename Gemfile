@@ -44,3 +44,6 @@ gem "font-awesome-rails"
 
 # Use HAML
 gem 'haml-rails'
+
+
+gem 'bcrypt-ruby'

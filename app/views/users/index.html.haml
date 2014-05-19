@@ -1,0 +1,6 @@
+#page-wrapper
+	= debug(@all)
+	- @all.each do |a|
+		%h1= a.nombre
+		%br
+		%h1= a.email
